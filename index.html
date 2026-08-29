@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes</title>
+</head>
+
+<body>
+
+    <!-- HEADER: Encabezado de la página -->
+    <header>
+
+        <h1>Bienvenidos a mi sitio web</h1>
+
+        <h2>Conóceme</h2>
+        <h3>Mi nombre es Diego Foronda</h3>
+        <h4>Me gusta viajar</h4>
+        <h5>Me encantaría conocer el extranjero</h5>
+        <h6>Y conocer nuevos lugares</h6>
+
+    </header>
+
+
+    <!-- NAV: Menú o enlaces de navegación -->
+    <nav>
+
+        <a href="#inicio">Inicio</a>
+        <a href="#viajes">Viajes</a>
+        <a href="#viajes">Lugares</a>
+        <a href="#contacto">Contacto</a>
+
+    </nav>
+
+
+    <!-- MAIN: Contenido principal -->
+    <main>
+
+        <!-- SECTION: Sección de presentación -->
+        <section id="inicio">
+
+            <h2>Mi pasión por viajar</h2>
+
+            <p>
+                Cualquier día es bueno para conocer y tener una aventura.
+            </p>
+
+            <p>
+                Crear recuerdos y anécdotas.
+            </p>
+
+            <p>
+                Comprar regalos.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION: Lugares -->
+        <section id="viajes">
+
+            <h2>Lugares que me gustaría conocer</h2>
+
+            <!-- ARTICLE: Contenido independiente -->
+            <article>
+
+                <h3>La naturaleza</h3>
+
+                <figure>
+                    <img src="img/lugares.jpg" alt="Arcoiris">
+                    <figcaption>
+                        Atardecer en un lugar diferente.
+                    </figcaption>
+                </figure>
+
+                <img src="img/cascada.jpg" alt="Cascada azul">
+                <img src="img/cueva.jpg" alt="Cueva">
+
+            </article>
+
+
+            <!-- ARTICLE: Actividades de viaje -->
+            <article>
+
+                <h3>Lo que quiero hacer</h3>
+
+                <ul>
+                    <li>Aprender su idioma</li>
+                    <li>Conocer su cultura</li>
+                    <li>Compartir en familia</li>
+                </ul>
+
+            </article>
+
+
+            <!-- ARTICLE: Plan de viaje -->
+            <article>
+
+                <h3>Mi plan de viaje</h3>
+
+                <ol>
+                    <li>Recorrer sus lugares más turísticos</li>
+                    <li>Degustar los diferentes tipos de comidas</li>
+                    <li>Conocer su historia</li>
+                </ol>
+
+            </article>
+
+        </section>
+
+
+        <!-- ASIDE: Información complementaria -->
+        <aside>
+
+            <h2>Dato interesante</h2>
+
+            <p>
+                Viajar permite conocer nuevas culturas, descubrir lugares
+                increíbles y crear recuerdos inolvidables.
+            </p>
+
+            <a href="https://travelgrafia.co/blog/lugares-turisticos-de-colombia/"
+               target="_blank">
+                Visita mi sitio web
+            </a>
+
+        </aside>
+
+
+        <!-- SECTION: Formulario -->
+        <section id="contacto">
+
+            <h2>Formulario de contacto</h2>
+
+            <form action="proceso.html" method="post">
+
+                <br>
+
+                <label for="nombre">Nombre</label>
+                <input type="text"
+                       id="nombre"
+                       name="nombre"
+                       placeholder="Ingresa tu nombre">
+
+                <br>
+                <br>
+
+                <label for="edad">Edad</label>
+                <input type="number"
+                       id="edad"
+                       name="edad"
+                       placeholder="Ingresa tu edad">
+
+                <br>
+                <br>
+
+                <label for="fecha-nacimiento">
+                    Fecha de nacimiento:
+                </label>
+
+                <input type="date"
+                       id="fecha-nacimiento"
+                       name="fecha-nacimiento">
+
+                <br>
+                <br>
+
+                <label for="email">Email</label>
+
+                <input type="email"
+                       id="email"
+                       name="correo"
+                       placeholder="Ingresa tu email">
+
+                <br>
+                <br>
+
+                <label for="password">Password</label>
+
+                <input type="password"
+                       id="password"
+                       name="password"
+                       placeholder="Ingresa tu contraseña">
+
+                <br>
+                <br>
+
+                <label for="texto">
+                    Color favorito
+                </label>
+
+                <textarea id="texto"
+                          name="texto"
+                          placeholder="Describe tu color favorito">
+                </textarea>
+
+                <br>
+                <br>
+
+                <label for="color">
+                    Selecciona tu color favorito de traje de baño:
+                </label>
+
+                <input type="color"
+                       id="color"
+                       name="color">
+
+                <br>
+                <br>
+
+                <input type="submit" value="Enviar">
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER: Pie de página -->
+    <footer>
+
+        <p>
+            © 2026 Diego Foronda - Sitio web de viajes
+        </p>
+
+        <p>
+            Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+</body>
+</html>
