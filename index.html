@@ -1,281 +1,788 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viajes</title>
-    <link rel="stylesheet" href="styles.css"> // <!-- css externo -->>
-
-
-    
-    <!--css interno
-    <style>    
-        h1 {
-            color: blue;
-        }
-        h2 {
-            color: green;           
-        }
-        p {
-            font-size: 16px;
-        }
-    </style> 
-    -->
+    <title>PlayStation II</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/aap.js"></script>
 </head>
 
 <body>
 
-    <!-- HEADER: Encabezado de la página -->
+    <!-- =========================
+    HEADER
+    ========================== -->
+
     <header>
 
-        <h1>Bienvenidos a mi sitio web</h1>
-        <h2>Conóceme</h2>
-        <!-- <h2 style="color: red;">Conóceme</h2>  css en linea-->
-        <h3>Mi nombre es Diego Foronda</h3>
-        <h4>Me gusta viajar</h4>
-        <h5>Me encantaría conocer el extranjero</h5>
-        <h6>Y conocer nuevos lugares</h6>
+        <h1>Bienvenidos a la era del Play II</h1>
+
+        <img src="img/OIP.webp" alt="PlayStation 2">
+
+        <video width="1350" height="500" controls autoplay muted loop>
+            <source src="img/video.mp4" type="video/mp4">
+            Tu navegador no admite la reproducción de videos.
+        </video>
+
+        <p>
+            Los juegos que marcaron una generación
+        </p>
 
     </header>
 
 
-    <!-- NAV: Menú o enlaces de navegación -->
+    <!-- =========================
+         MENÚ DE NAVEGACIÓN
+    ========================== -->
+
     <nav>
 
         <a href="#inicio">Inicio</a>
-        <a href="#viajes">Viajes</a>
-        <a href="#viajes">Lugares</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#juegos">Juegos</a>
+        <a href="#accion">Acción</a>
+        <a href="#deportes">Deportes</a>
+        <a href="#peleas">Peleas</a>
+        <a href="#terror">Terror</a>
+        <a href="#galeria">Galería</a>
+
+        <search>
+
+            <form action="/buscar">
+
+                <label for="caja-busqueda">
+                    Buscar en el sitio:
+                </label>
+
+                <input
+                    type="search"
+                    id="caja-busqueda"
+                    name="busqueda"
+                    placeholder="Escribe algo..."
+                >
+
+                <button type="submit">
+                    Buscar
+                </button>
+
+            </form>
+
+        </search>
 
     </nav>
 
-<table border="1">
-  <!-- Fila de la cabecera -->
-  <thead>
-    <tr> 
-      <th>Continente</th> <!-- Celda cabecera de la columna 1 -->
-      <th>Pais</th> <!-- Celda cabecera de la columna 2 -->
-      <th>Ciudad</th> <!-- Celda cabecera de la columna 3 -->
-    </tr>
-  </thead>
 
-  <tbody>
-    <!-- Primera fila -->
-    <tr>
-      <td>Asia</td> <!-- Primera celda de la primera fila -->
-      <td>Japon</td> <!-- Segunda celda de la primera fila -->
-      <td>Tokio</td> <!-- Tercera celda de la primera fila -->
-    </tr>
+    <!-- =========================
+         CONTENIDO PRINCIPAL
+    ========================== -->
 
-    <!-- Segunda fila -->
-    <tr>
-      <td>Europa</td> <!-- Primera celda de la segunda fila -->
-      <td>España</td> <!-- Segunda celda de la segunda fila -->
-      <td>Barcelona</td> <!-- Tercera celda de la segunda fila -->
-    </tr>
-  </tbody>
-</table>
-
-
-
-
-    <!-- MAIN: Contenido principal -->
     <main>
 
-        <!-- SECTION: Sección de presentación -->
+
+        <!-- =========================
+             INICIO
+        ========================== -->
+
         <section id="inicio">
 
-            <h2>Mi pasión por viajar</h2>
+            <h2>Clásicos de la infancia</h2>
 
             <p>
-                Cualquier día es bueno para conocer y tener una aventura.
+                Cualquier día era bueno para disfrutar con estos señores.
+                Pasaban las horas sin darte cuenta y tu mamá te regañaba
+                porque no hacías las tareas.
             </p>
 
-            <p>
-                Crear recuerdos y anécdotas.
-            </p>
 
-            <p>
-                Comprar
-            </p>
+            <!-- GOD OF WAR -->
 
-        </section>
-
-
-        <!-- SECTION: Lugares -->
-        <section id="viajes">
-
-            <h2>Lugares que me gustaría conocer</h2>
-
-            <!-- ARTICLE: Contenido independiente -->
             <article>
 
-                <h3>La naturaleza</h3>
+                <h3>GOD OF WAR</h3>
 
                 <figure>
-                    <img src="img/lugares.jpg" alt="Arcoiris">
+
+                    <img
+                        src="img/protagonistas.jpg"
+                        alt="Protagonistas de videojuegos"
+                    >
+
                     <figcaption>
-                        Atardecer en un lugar diferente.
+                        Pasaban las horas sin darte cuenta y tu mamá te
+                        regañaba porque no hacías las tareas.
                     </figcaption>
+
                 </figure>
 
-                <img src="img/cascada.jpg" alt="Cascada azul">
-                <img src="img/cueva.jpg" alt="Cueva">
+
+                <figure>
+
+                    <img
+                        src="img/kratos.webp"
+                        alt="Kratos de God of War"
+                    >
+
+                    <figcaption>
+                        El fantasma de Esparta
+                    </figcaption>
+
+                </figure>
+
+
+                <p>
+                    Una aventura de acción protagonizada por
+                    <strong>Kratos</strong>, ambientada en la mitología griega.
+                </p>
+
+                <p>
+                    <strong>Género:</strong> Acción y aventura
+                </p>
+
+                <p aria-label="Valoración: 5 de 5 estrellas">
+                    ⭐⭐⭐⭐⭐
+                </p>
 
             </article>
 
 
-            <!-- ARTICLE: Actividades de viaje -->
+            <!-- PRO EVOLUTION SOCCER -->
+
             <article>
 
-                <h3>Lo que quiero hacer</h3>
+                <h3>PRO EVOLUTION SOCCER</h3>
 
-                <ul>
-                    <li>Aprender su idioma</li>
-                    <li>Conocer su cultura</li>
-                    <li>Compartir en familia</li>
-                </ul>
+                <figure>
 
-            </article>
+                    <img
+                        src="img/pier.jpg"
+                        alt="Pierluigi Collina, árbitro de fútbol"
+                    >
+
+                    <figcaption>
+                        <a
+                            href="https://www-referee-com.translate.goog/pierluigi-collina-most-recognizable-referee/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc"
+                            target="_blank"
+                        >
+                            Pierluigi Collina
+                        </a>
+                    </figcaption>
+
+                </figure>
 
 
-            <!-- ARTICLE: Plan de viaje -->
-            <article>
+                <p>
+                    Uno de los videojuegos de <strong>fútbol</strong> más
+                    recordados de la época de PlayStation II.
+                </p>
 
-                <h3>Mi plan de viaje</h3>
+                <p>
+                    <strong>Género:</strong> Deporte
+                </p>
 
-                <ol>
-                    <li>Recorrer sus lugares más turísticos</li>
-                    <li>Degustar los diferentes tipos de comidas</li>
-                    <li>Conocer su historia</li>
-                </ol>
+                <p aria-label="Valoración: 5 de 5 estrellas">
+                    ⭐⭐⭐⭐⭐
+                </p>
+
+
+                <aside>
+
+                    <h4>Dato curioso</h4>
+
+                    <p>
+                        Pierluigi Collina salió en la portada del videojuego
+                        Pro Evolution Soccer 3 (PES) en 2003 porque era
+                        considerado uno de los árbitros más reconocidos y
+                        emblemáticos del mundo.
+                    </p>
+
+                </aside>
 
             </article>
 
         </section>
 
 
-        <!-- ASIDE: Información complementaria -->
-        <aside>
+        <!-- =========================
+             JUEGOS
+        ========================== -->
 
-            <h2>Dato interesante</h2>
+        <section id="juegos">
+
+            <h2>Juegos de PlayStation II</h2>
 
             <p>
-                Viajar permite conocer nuevas culturas, descubrir lugares
-                increíbles y crear recuerdos inolvidables.
+                La PlayStation II contó con una gran variedad de videojuegos
+                para diferentes gustos y edades, destacándose por sus juegos
+                de acción, deportes, lucha, terror y mundo abierto.
             </p>
 
-            <a href="https://travelgrafia.co/blog/lugares-turisticos-de-colombia/"
-               target="_blank">
-                Visita mi sitio web
-            </a>
 
-        </aside>
+            <article>
+
+                <h3>God of War</h3>
+
+                <p>
+                    Juego de acción y aventura protagonizado por Kratos,
+                    quien se enfrenta a diferentes enemigos y criaturas
+                    de la mitología griega.
+                </p>
+
+                <img src="img/kraatos.jpg" alt="God of War">
+
+            </article>
 
 
-        <!-- SECTION: Formulario -->
-        <section id="contacto">
+            <article>
 
-            <h2>Formulario de contacto</h2>
+                <h3>Pro Evolution Soccer</h3>
 
-            <form action="proceso.html" method="post">
+                <p>
+                    Juego de fútbol que permite disputar partidos,
+                    torneos y diferentes competiciones con equipos
+                    y jugadores de todo el mundo.
+                </p>
 
-                <br>
+                <img src="img/pro.jpg" alt="Pro Evolution Soccer">
 
-                <label for="nombre">Nombre</label>
-                <input type="text"
-                       id="nombre"
-                       name="nombre"
-                       placeholder="Ingresa tu nombre">
+            </article>
 
-                <br>
-                <br>
 
-                <label for="edad">Edad</label>
-                <input type="number"
-                       id="edad"
-                       name="edad"
-                       placeholder="Ingresa tu edad">
+            <article>
 
-                <br>
-                <br>
+                <h3>Bloody Roar</h3>
 
-                <label for="fecha-nacimiento">
-                    Fecha de nacimiento:
-                </label>
+                <p>
+                    Juego de lucha en el que los personajes pueden
+                    transformarse en diferentes animales durante
+                    los combates.
+                </p>
 
-                <input type="date"
-                       id="fecha-nacimiento"
-                       name="fecha-nacimiento">
+                <img src="img/blody.jpg" alt="Bloody Roar">
 
-                <br>
-                <br>
+            </article>
 
-                <label for="email">Email</label>
 
-                <input type="email"
-                       id="email"
-                       name="correo"
-                       placeholder="Ingresa tu email">
+            <article>
 
-                <br>
-                <br>
+                <h3>Resident Evil</h3>
 
-                <label for="password">Password</label>
+                <p>
+                    Juego de terror y supervivencia en el que el jugador
+                    debe enfrentarse a diferentes enemigos mientras
+                    explora lugares peligrosos.
+                </p>
 
-                <input type="password"
-                       id="password"
-                       name="password"
-                       placeholder="Ingresa tu contraseña">
+                <img src="img/resident.jpg" alt="Resident Evil">
 
-                <br>
-                <br>
+            </article>
 
-                <label for="texto">
-                    Color favorito
-                </label>
 
-                <textarea id="texto"
-                          name="texto"
-                          placeholder="Describe tu color favorito">
-                </textarea>
+            <article>
 
-                <br>
-                <br>
+                <h3>Grand Theft Auto</h3>
 
-                <label for="color">
-                    Selecciona tu color favorito de traje de baño:
-                </label>
+                <p>
+                    Juego de mundo abierto en el que el jugador puede
+                    explorar diferentes ciudades, realizar misiones
+                    y participar en diversas actividades.
+                </p>
 
-                <input type="color"
-                       id="color"
-                       name="color">
+                <img src="img/gta.jpg" alt="Grand Theft Auto">
 
-                <br>
-                <br>
+            </article>
 
-                <input type="submit" value="Enviar">
+        </section>
 
-            </form>
+
+        <!-- =========================
+             ACCIÓN
+        ========================== -->
+
+        <section id="accion">
+
+            <h2>Juegos de Acción de PlayStation II</h2>
+
+            <p>
+                Los juegos de acción de PlayStation II se caracterizan
+                por sus combates, aventuras, exploración y diferentes
+                misiones que debe completar el jugador.
+            </p>
+
+
+            <article>
+
+                <h3>Devil May Cry III</h3>
+
+                <img src="img/devil.jpg" alt="Devil May Cry III">
+
+                <p>
+                    Juego de acción protagonizado por Dante, quien
+                    debe enfrentarse a numerosos enemigos utilizando
+                    diferentes armas y habilidades.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <h3>Metal Gear Solid III</h3>
+
+                <img src="img/gear.jpg" alt="Metal Gear Solid III">
+
+                <p>
+                    Juego de acción y sigilo en el que Snake debe
+                    infiltrarse en diferentes lugares y completar
+                    peligrosas misiones.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <h3>Medalla de honor</h3>
+
+                <img src="img/medal.jpg" alt="Medalla de honor">
+
+                <p>
+                    Juego de acción y supervivencia en el que
+                    soldados se enfrentan entre sí para
+                    llevar a la victoria a su nación.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <h3>Shadow of the Colossus</h3>
+
+                <img
+                    src="img/Shadow.webp"
+                    alt="Shadow of the Colossus"
+                >
+
+                <p>
+                    Aventura de acción en la que el jugador debe
+                    explorar un extenso mundo y derrotar enormes
+                    criaturas conocidas como colosos.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- =========================
+             DEPORTES
+        ========================== -->
+
+        <section id="deportes">
+
+            <h2>Juegos de Deportes de PlayStation II</h2>
+
+            <p>
+                Los juegos de deportes de PlayStation II permiten disfrutar
+                de diferentes disciplinas deportivas y competir en distintos
+                torneos y partidos.
+            </p>
+
+
+            <article>
+
+                <h3>FIFA 14</h3>
+
+                <p>
+                    Juego de fútbol que permite disputar partidos,
+                    torneos y competiciones con diferentes equipos.
+                </p>
+
+                <img src="img/fifa.webp" alt="FIFA 14">
+
+            </article>
+
+
+            <article>
+
+                <h3>NBA Street</h3>
+
+                <p>
+                    Juego de baloncesto que combina partidos callejeros
+                    con diferentes trucos y movimientos especiales.
+                </p>
+
+                <img src="img/street.jpg" alt="NBA Street">
+
+            </article>
+
+
+            <article>
+
+                <h3>Tony Hawk's Underground</h3>
+
+                <p>
+                    Juego de skate en el que el jugador puede realizar
+                    diferentes trucos y recorrer distintos escenarios.
+                </p>
+
+                <img
+                    src="img/tony.jpg"
+                    alt="Tony Hawk's Underground"
+                >
+
+            </article>
+
+        </section>
+
+
+        <!-- =========================
+             PELEAS
+        ========================== -->
+
+        <section id="peleas">
+
+            <h2>Juegos de Peleas de PlayStation II</h2>
+
+            <p>
+                Los juegos de peleas se caracterizan por los combates
+                entre diferentes personajes, cada uno con sus propios
+                movimientos y habilidades.
+            </p>
+
+
+            <article>
+
+                <h3>Tekken 5</h3>
+
+                <p>
+                    Juego de lucha en el que diferentes personajes
+                    se enfrentan utilizando combos y movimientos especiales.
+                </p>
+
+                <img src="img/teken.jpg" alt="Tekken 5">
+
+            </article>
+
+
+            <article>
+
+                <h3>Mortal Kombat: Deception</h3>
+
+                <p>
+                    Juego de lucha con diferentes personajes, escenarios
+                    y modos de juego.
+                </p>
+
+                <img
+                    src="img/mortal.jpg"
+                    alt="Mortal Kombat Deception"
+                >
+
+            </article>
+
+
+            <article>
+
+                <h3>Dragon Ball Z: Budokai 3</h3>
+
+                <p>
+                    Juego de lucha basado en Dragon Ball Z, donde los
+                    personajes utilizan ataques y transformaciones especiales.
+                </p>
+
+                <img
+                    src="img/dbz.jpg"
+                    alt="Dragon Ball Z Budokai 3"
+                >
+
+            </article>
+
+        </section>
+
+
+        <!-- =========================
+             TERROR
+        ========================== -->
+
+        <section id="terror">
+
+            <h2>Juegos de Terror de PlayStation II</h2>
+
+            <p>
+                Los juegos de terror buscan crear tensión y suspenso
+                mediante ambientes oscuros, criaturas y situaciones
+                peligrosas.
+            </p>
+
+
+            <article>
+
+                <h3>Silent Hill 2</h3>
+
+                <p>
+                    Juego de terror psicológico en el que James Sunderland
+                    llega al misterioso pueblo de Silent Hill.
+                </p>
+
+                <img
+                    src="img/silent.jpg"
+                    alt="Silent Hill 2"
+                >
+
+            </article>
+
+
+            <article>
+
+                <h3>Fatal Frame II: Crimson Butterfly</h3>
+
+                <p>
+                    Juego de terror en el que las protagonistas exploran
+                    lugares misteriosos y utilizan una cámara especial
+                    para enfrentarse a los fantasmas.
+                </p>
+
+                <img
+                    src="img/crimson.jpg"
+                    alt="Fatal Frame II Crimson Butterfly"
+                >
+
+            </article>
+
+
+            <article>
+
+                <h3>Haunting Ground</h3>
+
+                <p>
+                    Juego de terror y supervivencia en el que Fiona debe
+                    escapar de un misterioso castillo mientras intenta
+                    sobrevivir a sus perseguidores.
+                </p>
+
+                <img
+                    src="img/ground.jpg"
+                    alt="Haunting Ground"
+                >
+
+            </article>
+
+
+            <article>
+
+                <h3>Dino Crisis</h3>
+
+                <p>
+                    Juego de suspenso y supervivencia en el que Regina
+                    debe explorar una instalación llena de dinosaurios
+                    mientras busca una forma de escapar y descubrir
+                    qué ocurrió.
+                </p>
+
+                <img
+                    src="img/dino.jpg"
+                    alt="Dino Crisis"
+                >
+
+            </article>
+
+        </section>
+
+
+        <!-- =========================
+             GALERÍA
+        ========================== -->
+
+        <section id="galeria">
+
+            <h2>Galería de videojuegos</h2>
+
+            <p>
+                Una colección de imágenes de algunos videojuegos clásicos
+                y populares que nos dejaron grandes recuerdos.
+            </p>
+
+
+            <!-- =========================
+                 CARRUSEL
+            ========================== -->
+
+            <div class="carrusel">
+
+                <div class="imagenes">
+
+                    <figure>
+                        <img
+                            src="img/mario.jpg"
+                            alt="Videojuego de Mario Bros"
+                        >
+                        <figcaption>Mario Bros</figcaption>
+                    </figure>
+
+
+                    <figure>
+                        <img
+                            src="img/dbs.jpg"
+                            alt="Videojuego de Dragon Ball Z"
+                        >
+                        <figcaption>Dragon Ball Z</figcaption>
+                    </figure>
+
+
+                    <figure>
+                        <img
+                            src="img/onepiece.jpg"
+                            alt="Videojuego de One Piece"
+                        >
+                        <figcaption>One Piece</figcaption>
+                    </figure>
+
+
+                    <figure>
+                        <img
+                            src="img/bleach.jpg"
+                            alt="Videojuego de Bleach"
+                        >
+                        <figcaption>Bleach</figcaption>
+                    </figure>
+
+
+                    <figure>
+                        <img
+                            src="img/demon.jpg"
+                            alt="Videojuego de Demon Slayer"
+                        >
+                        <figcaption>Demon Slayer</figcaption>
+                    </figure>
+
+                </div>
+
+
+                <!-- Indicadores -->
+
+                <div class="indicadores">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 SEGUNDA GALERÍA
+            ========================== -->
+
+            <div class="galeria">
+
+                <figure>
+
+                    <img
+                        src="img/tsubasa.jpg"
+                        alt="Videojuego de Captain Tsubasa"
+                    >
+
+                    <figcaption>
+                        Captain Tsubasa
+                    </figcaption>
+
+                </figure>
+
+
+                <figure>
+
+                    <img
+                        src="img/doraemon.webp"
+                        alt="Videojuego de Doraemon"
+                    >
+
+                    <figcaption>
+                        Doraemon
+                    </figcaption>
+
+                </figure>
+
+
+                <figure>
+
+                    <img
+                        src="img/quest.jpg"
+                        alt="Videojuego de Dragon Quest"
+                    >
+
+                    <figcaption>
+                        Dragon Quest
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+
+            <!-- =========================
+                 VIDEO DE LA GALERÍA
+            ========================== -->
+
+            <div class="video">
+
+                <h3>Video de videojuegos clásicos</h3>
+
+                <figure>
+
+                    <video
+                        width="1350"
+                        height="500"
+                        controls
+                        autoplay
+                        muted
+                        loop
+                    >
+
+                        <source
+                            src="img/video2.mp4"
+                            type="video/mp4"
+                        >
+
+                        Tu navegador no admite la reproducción de videos.
+
+                    </video>
+
+                    <figcaption>
+                        Video relacionado con algunos
+                        <strong>videojuegos clásicos.</strong>
+                    </figcaption>
+
+                </figure>
+
+            </div>
 
         </section>
 
     </main>
 
 
-    <!-- FOOTER: Pie de página -->
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
 
         <p>
-            © 2026 Diego Foronda - Sitio web de viajes
+            © 2026 Diego Foronda - Sitio web de videojuegos
         </p>
 
         <p>
-            Todos los derechos reservados.
+            Todos los derechos reservados. <img src="img/logo.jpg" alt="logo playstation">
         </p>
 
     </footer>
 
 </body>
+
 </html>

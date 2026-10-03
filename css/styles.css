@@ -1,0 +1,583 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    background: linear-gradient(135deg, #050505, #172554, #000);
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 4px solid #0066ff;
+}
+
+header h1 {
+    color: #00aaff;
+    font-size: 42px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px #0066ff;
+}
+
+header img {
+    width: 250px;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto 25px;
+    border-radius: 15px;
+}
+
+header video {
+    width: 90%;
+    max-width: 1350px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 102, 255, 0.5);
+}
+
+header p {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #ddd;
+}
+
+
+/* =========================================
+   MENÚ DE NAVEGACIÓN
+========================================= */
+
+nav {
+    background-color: #050505;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #0066ff;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav > a:hover {
+    background-color: #0066ff;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   BUSCADOR
+========================================= */
+
+nav search {
+    display: block;
+    margin-top: 10px;
+}
+
+nav search label {
+    color: #ccc;
+}
+
+nav input[type="search"] {
+    padding: 10px;
+    width: 250px;
+    max-width: 80%;
+    border: 2px solid #0066ff;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+}
+
+nav button {
+    padding: 10px 15px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0066ff;
+    color: white;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #0044aa;
+}
+
+
+/* =========================================
+   CONTENIDO PRINCIPAL
+========================================= */
+
+main {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+section {
+    padding: 60px 20px;
+    margin-bottom: 20px;
+    scroll-margin-top: 100px;
+}
+
+section h2 {
+    color: #00aaff;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px rgba(0, 170, 255, 0.5);
+}
+
+section > p {
+    max-width: 900px;
+    margin: 0 auto 35px;
+    text-align: center;
+    color: #ccc;
+    font-size: 18px;
+}
+
+
+/* =========================================
+   ARTÍCULOS
+========================================= */
+
+article {
+    background: linear-gradient(145deg, #1b1b1b, #252525);
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 15px;
+    border-left: 5px solid #0066ff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+article h3 {
+    color: #00aaff;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+article p {
+    color: #ddd;
+    margin: 10px 0;
+}
+
+
+/* =========================================
+   IMÁGENES DE LOS JUEGOS
+========================================= */
+
+article img {
+    width: 300px;
+    max-width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+article img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #0066ff;
+}
+
+
+/* =========================================
+   FIGURES
+========================================= */
+
+figure {
+    text-align: center;
+    margin: 25px 0;
+}
+
+figure img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+figcaption {
+    color: #aaa;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+figcaption a {
+    color: #00aaff;
+}
+
+
+/* =========================================
+   ASIDE
+========================================= */
+
+aside {
+    background-color: #111827;
+    border-left: 4px solid #00aaff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+aside h4 {
+    color: #00aaff;
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   GALERÍA
+========================================= */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.galeria figure {
+    background-color: #1c1c1c;
+    padding: 15px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.galeria figure:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #0066ff;
+}
+
+.galeria img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   CARRUSEL
+========================================= */
+
+.carrusel {
+    width: 850px;
+    max-width: 100%;
+    height: 500px;
+    margin: 40px auto;
+    overflow: hidden;
+    position: relative;
+    background-color: #050505;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 102, 255, 0.5);
+
+    /* Hace que el carrusel se detenga al quitar el cursor */
+    animation: pausaCarrusel 1s linear infinite;
+}
+
+
+/* =========================================
+   IMÁGENES DEL CARRUSEL
+========================================= */
+
+.imagenes {
+    display: flex;
+    width: 500%;
+    height: 500px;
+
+    animation: moverCarrusel 15s infinite;
+    animation-play-state: paused;
+}
+
+
+/* Cada imagen ocupa el 20% */
+
+.imagenes figure {
+    width: 20%;
+    min-width: 20%;
+    height: 500px;
+    margin: 0;
+    position: relative;
+}
+
+
+/* Imágenes */
+
+.imagenes img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Texto sobre la imagen */
+
+.imagenes figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 15px;
+
+    background: rgba(0, 0, 0, 0.75);
+
+    color: white;
+
+    font-size: 20px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   ACTIVAR ANIMACIÓN AL PASAR EL CURSOR
+========================================= */
+
+.carrusel:hover .imagenes {
+    animation-play-state: running;
+}
+
+
+/* =========================================
+   ANIMACIÓN DEL CARRUSEL
+========================================= */
+
+@keyframes moverCarrusel {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    18% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-20%);
+    }
+
+    38% {
+        transform: translateX(-20%);
+    }
+
+    40% {
+        transform: translateX(-40%);
+    }
+
+    58% {
+        transform: translateX(-40%);
+    }
+
+    60% {
+        transform: translateX(-60%);
+    }
+
+    78% {
+        transform: translateX(-60%);
+    }
+
+    80% {
+        transform: translateX(-80%);
+    }
+
+    98% {
+        transform: translateX(-80%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+
+/* =========================================
+   INDICADORES DEL CARRUSEL
+========================================= */
+
+.indicadores {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 10px;
+
+    z-index: 10;
+}
+
+.indicadores span {
+    width: 14px;
+    height: 14px;
+
+    background-color: #0066ff;
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 8px #0066ff;
+}
+
+
+/* =========================================
+   VIDEO DE LA GALERÍA
+========================================= */
+
+.video {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.video h3 {
+    color: #00aaff;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.video video {
+    width: 100%;
+    max-width: 1350px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 102, 255, 0.5);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+footer {
+    background-color: #050505;
+    border-top: 3px solid #0066ff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    color: #aaa;
+    margin: 5px;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+
+/* =========================================
+   RESPONSIVE - CELULARES
+========================================= */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav > a {
+        display: block;
+        margin: 5px auto;
+        width: 80%;
+    }
+
+    nav input[type="search"] {
+        width: 70%;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .carrusel {
+        height: 350px;
+    }
+
+    .imagenes {
+        height: 350px;
+    }
+
+    .imagenes figure {
+        height: 350px;
+    }
+
+    .imagenes img {
+        height: 350px;
+    }
+
+    article img {
+        width: 100%;
+        height: 250px;
+    }
+
+    section h2 {
+        font-size: 27px;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLETS
+========================================= */
+
+@media (min-width: 769px) and (max-width: 1100px) {
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .carrusel {
+        width: 90%;
+        height: 400px;
+    }
+
+    .imagenes {
+        height: 400px;
+    }
+
+    .imagenes figure {
+        height: 400px;
+    }
+
+    .imagenes img {
+        height: 400px;
+    }
+
+}
